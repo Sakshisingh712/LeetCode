@@ -4,12 +4,11 @@ class Solution:
         i=0
         if not flowerbed:
             return False
-        if num<=1:
-            if n==0:
-                return True
-            elif flowerbed[0]==0:
-                return True
-            return False
+        if num==1:
+            if flowerbed[0]==0:
+                return n<=1
+            else:
+                return n<=0
         # elif num==2:
         #     if n==0:
         #         return True
