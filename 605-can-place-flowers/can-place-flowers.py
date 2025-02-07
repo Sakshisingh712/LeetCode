@@ -8,13 +8,13 @@ class Solution:
             elif flowerbed[0]==0:
                 return True
             return False
-        elif num==2:
-            if n==0:
-                return True
-            elif n==1 and flowerbed.count(0)==2:
-                return True
-            else:
-                return False
+        # elif num==2:
+        #     if n==0:
+        #         return True
+        #     elif n==1 and flowerbed.count(0)==2:
+        #         return True
+        #     else:
+        #         return False
         while i <=num-1:
             if n==0:
                 break
