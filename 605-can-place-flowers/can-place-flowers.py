@@ -5,10 +5,9 @@ class Solution:
         if num<=1:
             if n==0:
                 return True
-            else:
-                if flowerbed[0]==0:
-                    return True
-                return False
+            elif flowerbed[0]==0 and n==1:
+                return True
+            return False
         while i <=num-1:
             if n==0:
                 break
