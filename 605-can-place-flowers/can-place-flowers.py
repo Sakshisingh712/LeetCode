@@ -2,6 +2,8 @@ class Solution:
     def canPlaceFlowers(self, flowerbed: List[int], n: int) -> bool:
         num=len(flowerbed)
         i=0
+        if not flowerbed:
+            return False
         if num<=1:
             if n==0:
                 return True
