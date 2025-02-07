@@ -5,7 +5,7 @@ class Solution:
         if num<=1:
             if n==0:
                 return True
-            elif flowerbed[0]==0 and n==1:
+            elif flowerbed[0]==0:
                 return True
             return False
         while i <=num-1:
