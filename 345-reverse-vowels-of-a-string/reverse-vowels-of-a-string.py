@@ -1,11 +1,7 @@
 class Solution:
     def reverseVowels(self, s: str) -> str:
         length = len(s)
-        # IceCreAm
-        # leetcode
-        s=s.strip('')
         string = list(s)
-        print(string)
         vowels = ['A', 'a', 'E', 'e', 'I', 'i', 'O', 'o', 'U', 'u']
         i=0
         j=length-1
