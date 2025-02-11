@@ -8,18 +8,11 @@ class Solution:
             return False
         elif len(s)>len(t):
             return False
-        while j<len(t):
+        while j<len(t) and i<len(s):
             if s[i]==t[j]:
-                temp+=s[i]
                 i+=1
-                j+=1
-                print(i, j, temp)
-            else:
-                j+=1
-                print(j)
-            if i==len(s):
-                break
-        if temp==s:
+            j+=1
+        if i==len(s):
             return True
         else:
             return False
