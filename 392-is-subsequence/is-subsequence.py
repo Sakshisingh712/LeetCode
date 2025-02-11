@@ -6,8 +6,8 @@ class Solution:
             return True
         elif not t:
             return False
-        # elif len(s)>len(t):
-        #     return False
+        elif len(s)>len(t):
+            return False
         while j<len(t) and i<len(s):
             if s[i]==t[j]:
                 i+=1
