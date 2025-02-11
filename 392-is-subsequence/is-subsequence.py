@@ -14,5 +14,4 @@ class Solution:
             j+=1
         if i==len(s):
             return True
-        else:
-            return False
+        return False
