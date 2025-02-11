@@ -4,6 +4,8 @@ class Solution:
         temp = ''
         if not s:
             return True
+        elif not t:
+            return False
         while j<len(t):
             if s[i]==t[j]:
                 temp+=s[i]
