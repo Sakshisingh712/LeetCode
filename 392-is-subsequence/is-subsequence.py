@@ -6,6 +6,8 @@ class Solution:
             return True
         elif not t:
             return False
+        elif len(s)>len(t):
+            return False
         while j<len(t):
             if s[i]==t[j]:
                 temp+=s[i]
