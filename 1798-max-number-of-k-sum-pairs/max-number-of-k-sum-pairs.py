@@ -7,9 +7,10 @@ class Solution:
         if len(nums)<1:
             return 0
         while i<j:
-            if nums[j]>k or nums[i] + nums[j] > k:
+            value = nums[i] + nums[j] 
+            if nums[j]>k or value > k:
                 j-=1
-            elif nums[i]+nums[j] == k:
+            elif value == k:
                 count+=1
                 i+=1
                 j-=1
