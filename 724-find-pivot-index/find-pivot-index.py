@@ -5,7 +5,7 @@ class Solution:
         for i in range(len(nums)):
             summation = summation + nums[i]
         for j in range(len(nums)):
-            print(prefixsum, summation)
+            # print(prefixsum, summation)
             if summation - nums[j] == 0 and j==0 :
                 return  0
             elif prefixsum == (summation - nums[j]):
