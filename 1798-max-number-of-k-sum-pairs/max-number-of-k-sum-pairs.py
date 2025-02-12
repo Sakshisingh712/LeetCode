@@ -6,9 +6,9 @@ class Solution:
         if len(nums)<1:
             return 0
         while i<j:
-            if nums[j]>k or nums[i] + nums[j] > k:
+            if nums[j]>k or nums[i] + nums[j]  > k:
                 j-=1
-            elif nums[i]+nums[j] == k:
+            elif nums[i] + nums[j]  == k:
                 count+=1
                 i+=1
                 j-=1
