@@ -6,14 +6,13 @@ class Solution:
         j= len(nums)-1
         count = 0
         while i<j:
-            value = nums[i] + nums[j]
-            if value == k:
+            if nums[i] + nums[j] == k:
                 count+=1
                 i+=1
                 j-=1
-            elif value > k:
+            elif nums[i] + nums[j] > k:
                 j-=1
-            elif value < k:
+            elif nums[i] + nums[j] < k:
                 i+=1
         return count
         
