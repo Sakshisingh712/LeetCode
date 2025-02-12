@@ -4,6 +4,8 @@ class Solution:
         i= 0
         j= len(nums)-1
         count = 0
+        if len(nums)<1:
+            return 0
         while i<j:
             if nums[j]>k or nums[i] + nums[j] > k:
                 j-=1
