@@ -1,0 +1,18 @@
+class Solution:
+    def pivotIndex(self, nums: List[int]) -> int:
+        summation = 0
+        prefixsum = 0
+        for i in range(len(nums)):
+            summation = summation + nums[i]
+        for j in range(len(nums)):
+            print(prefixsum, summation)
+            if summation - nums[j] == 0 and j==0 :
+                return  0
+            elif prefixsum == (summation - nums[j]):
+                return j
+            elif prefixsum==0 and j==len(nums)-1:
+                return j
+            else:
+                prefixsum += nums[j]
+                summation -= nums[j]
+        return -1
