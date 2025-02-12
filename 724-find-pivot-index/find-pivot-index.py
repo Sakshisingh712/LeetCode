@@ -1,9 +1,9 @@
 class Solution:
     def pivotIndex(self, nums: List[int]) -> int:
-        summation = sum(nums)
+        summation = 0 #sum(nums)
         prefixsum = 0
-        # for i in range(len(nums)):
-        #     summation = summation + nums[i]
+        for i in range(len(nums)):
+            summation = summation + nums[i]
         for j in range(len(nums)):
             if summation - nums[j] == 0 and j==0 :
                 return  0
