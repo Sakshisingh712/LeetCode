@@ -12,7 +12,7 @@ class Solution:
                 j-=1
             elif nums[i] + nums[j] > k:
                 j-=1
-            elif nums[i] + nums[j] < k:
+            else:
                 i+=1
         return count
         
