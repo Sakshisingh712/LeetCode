@@ -5,7 +5,7 @@ class Solution:
         max_count = 0
         if len(s)==1 and s in vowels:
             return 1
-        elif len(s)>1:
+        else:
             i, j = 0, 0
             while j < len(s):
                 if j-i +1 <= k:
@@ -13,17 +13,13 @@ class Solution:
                         count += 1
                     j += 1
                     max_count = max(max_count, count)
-                    # print(count)
                 else:
                     if s[i] in vowels:
                         count -= 1
-                        # print('I', count)
                     if s[j] in vowels: 
                         count += 1
-                    # print('C',count)
                     max_count = max(count, max_count)
                     i += 1
                     j += 1
             return max_count
-        
         return 0
