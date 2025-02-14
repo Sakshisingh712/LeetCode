@@ -3,9 +3,9 @@ class Solution:
         count = []
         unique =  set(arr)
         for i in unique:
-            count.append(arr.count(i))
-        if len(set(count)) == len(count):
-            return True
-        else:
-            return False
+            x = arr.count(i)
+            if x in count:
+                return False
+            count.append(x)
+        return True   
         
