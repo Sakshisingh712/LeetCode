@@ -1,6 +1,6 @@
 class Solution:
     def equalPairs(self, grid: List[List[int]]) -> int:
-        dictR = {}
+        dictR = defaultdict(int)
         dictC = []
         for i in range(len(grid[0])):
             val = ''
