@@ -7,7 +7,7 @@ class Solution:
                 stack.pop()
             else:
                 stack.append(i)
-        print(stack)
+        # print(stack)
             # if stack and i.islower() and stack[-1].isupper() and stack[-1].lower() == i:
             #     stack.pop()
             # elif stack and i.isupper() and stack[-1].islower() and stack[-1].upper() == i:
