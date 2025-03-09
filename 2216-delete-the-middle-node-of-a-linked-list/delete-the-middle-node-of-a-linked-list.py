@@ -8,11 +8,11 @@ class Solution:
         if head == None:
             return head
         elif head.next == None:
-            temp = head
-            head = head.next
-            temp = None
-            return head
-            
+            # temp = head
+            # head = head.next
+            # temp = None
+            return head.next
+
         slow = fast = head
         while fast and fast.next:
             slow = slow.next
