@@ -13,5 +13,5 @@ class Solution:
                 count += len(s) - right
                 hash_table[s[left]] -= 1
                 left += 1
-
+        del hash_table
         return count
