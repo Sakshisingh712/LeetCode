@@ -9,7 +9,7 @@ class Solution:
         left = 0
         for right in range(len(s)):
             hash_table[s[right]] += 1
-            while all(hash_table[char]>0 for char in 'abc'):
+            while min(hash_table.values())>0:
                 count += len(s) - right
                 hash_table[s[left]] -= 1
                 left += 1
