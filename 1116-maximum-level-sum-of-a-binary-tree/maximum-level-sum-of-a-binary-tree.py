@@ -27,7 +27,7 @@ class Solution:
                 if curr.right:
                     queue.append(curr.right)
                 sums += curr.val
-                print(level, sums)
+                # print(level, sums)
 
             if sums > maxSum:
                 maxSum = sums
