@@ -14,8 +14,8 @@ class Solution:
                 nr, nc = x + mr, y + mc
                 # next_time = moveTime[nr][nc]
                 if 0 <= nr < n and 0 <= nc < m:
-                    cost = (x + y ) % 2 + 1
-                    wait = max(time, moveTime[nr][nc]) + cost
+                    # cost = (x + y ) % 2 + 1
+                    wait = max(time, moveTime[nr][nc]) + ((x + y) % 2 + 1)
                     
                     if wait < distance[nr][nc]:
                         distance[nr][nc] = wait
