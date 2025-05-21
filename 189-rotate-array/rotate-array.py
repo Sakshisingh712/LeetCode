@@ -11,7 +11,7 @@ class Solution:
                 right -= 1
         n = len(nums)
         k = k % n
-        reverse(n-k, n-1)
-        # print(nums)
-        reverse(0, n-k -1)
         reverse(0, n-1)
+        # print(nums)
+        reverse(0, k-1)
+        reverse(k, n-1)
