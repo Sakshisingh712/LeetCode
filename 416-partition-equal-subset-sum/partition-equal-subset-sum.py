@@ -4,12 +4,7 @@ class Solution:
         dp = [[False for _ in range(sums + 1)] for _ in range(n + 1)]
         for i in range(n + 1):
             for j in range(sums + 1):
-                if i == 0 and j == 0:
-                    dp[i][j] = True
-                elif i == 0 and j > 0:
-                    dp[i][j] = False
-                elif j == 0 and i > 0:
-                    dp[i][j] = True
+                dp[i][0] = True
 
         for i in range(1, n + 1):
             for j in range(1, sums + 1):
