@@ -3,17 +3,17 @@ class Solution:
         
         mapping = Counter(words)
         # print(maps)
-        count = 0
+        res = 0
         alreadyPalindrome = 0
-        for w, freq in mapping.items():
-            s = w[::-1]
-            if w == s:
-                count += (freq // 2) * 4
+        for word, freq in mapping.items():
+            string = word[::-1]
+            if word == string:
+                res += (freq // 2) * 4
                 if freq % 2:
                     alreadyPalindrome = 1
-            elif w < s and s in mapping:
-                count += min(freq, mapping[s]) * 4
-        return count + alreadyPalindrome * 2
+            elif word < string and string in mapping:
+                res += min(freq, mapping[string]) * 4
+        return res + alreadyPalindrome * 2
 
         # mapping = {'symmetric': [], 'unsymmetric': []}
         # for w in words:
